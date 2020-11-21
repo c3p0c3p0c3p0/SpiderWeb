@@ -45,6 +45,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "discordBot", "discordBot\di
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "telegramBot", "telegramBot\telegramBot.csproj", "{B20BA057-1EE4-4A60-BAF9-1058CE4DD9B1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tgBot", "tgBot\tgBot.csproj", "{48DFA73A-4D03-4E93-B17B-7136D48899BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{B20BA057-1EE4-4A60-BAF9-1058CE4DD9B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B20BA057-1EE4-4A60-BAF9-1058CE4DD9B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B20BA057-1EE4-4A60-BAF9-1058CE4DD9B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48DFA73A-4D03-4E93-B17B-7136D48899BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48DFA73A-4D03-4E93-B17B-7136D48899BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48DFA73A-4D03-4E93-B17B-7136D48899BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48DFA73A-4D03-4E93-B17B-7136D48899BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -146,6 +152,7 @@ Global
 		{AA94D832-1CCC-4715-95A9-A483F23A1A5D} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{1394A310-8082-4B45-8547-A9738C963446} = {1F92143C-7581-4E92-AEA9-701C0CEAB9CC}
 		{B20BA057-1EE4-4A60-BAF9-1058CE4DD9B1} = {1F92143C-7581-4E92-AEA9-701C0CEAB9CC}
+		{48DFA73A-4D03-4E93-B17B-7136D48899BC} = {1F92143C-7581-4E92-AEA9-701C0CEAB9CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28315BFD-90E7-4E14-A2EA-F3D23AF4126F}
