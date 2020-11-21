@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpiderWeb.io.EntityFramewor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpiderWeb.io.Web", "src\SpiderWeb.io.Web\SpiderWeb.io.Web.csproj", "{068855E8-9240-4F1A-910B-CF825794513B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CA9AC87F-097E-4F15-8393-4BC07735A5B0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebCore", "WebCore", "{CA9AC87F-097E-4F15-8393-4BC07735A5B0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{04DBDB01-70F4-4E06-B468-8F87850B22BE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{04DBDB01-70F4-4E06-B468-8F87850B22BE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpiderWeb.io.Application.Tests", "test\SpiderWeb.io.Application.Tests\SpiderWeb.io.Application.Tests.csproj", "{50B2631D-129C-47B3-A587-029CCD6099BC}"
 EndProject
@@ -39,7 +39,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpiderWeb.io.HttpApi.Client
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpiderWeb.io.DbMigrator", "src\SpiderWeb.io.DbMigrator\SpiderWeb.io.DbMigrator.csproj", "{AA94D832-1CCC-4715-95A9-A483F23A1A5D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bot", "bot", "{1F92143C-7581-4E92-AEA9-701C0CEAB9CC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BotCore", "BotCore", "{1F92143C-7581-4E92-AEA9-701C0CEAB9CC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "discordBot", "discordBot\discordBot.csproj", "{1394A310-8082-4B45-8547-A9738C963446}"
 EndProject

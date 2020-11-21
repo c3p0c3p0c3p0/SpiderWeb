@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using SpiderWeb.io.Sources;
 
 namespace SpiderWeb.io
 {
@@ -6,9 +7,8 @@ namespace SpiderWeb.io
     {
         public ioApplicationAutoMapperProfile()
         {
-            /* You can configure your AutoMapper mapping configuration here.
-             * Alternatively, you can split your mapping configurations
-             * into multiple profile classes for a better organization. */
+            CreateMap<Source, SourceDto>();
+            CreateMap<CreateUpdateSourceDto, Source>();
         }
     }
 }

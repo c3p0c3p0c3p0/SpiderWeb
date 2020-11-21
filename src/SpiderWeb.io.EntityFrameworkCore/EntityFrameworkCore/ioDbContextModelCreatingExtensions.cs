@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SpiderWeb.io.Sources;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace SpiderWeb.io.EntityFrameworkCore
 {
@@ -9,14 +11,13 @@ namespace SpiderWeb.io.EntityFrameworkCore
         {
             Check.NotNull(builder, nameof(builder));
 
-            /* Configure your own tables/entities inside here */
-
-            //builder.Entity<YourEntity>(b =>
-            //{
-            //    b.ToTable(ioConsts.DbTablePrefix + "YourEntities", ioConsts.DbSchema);
-            //    b.ConfigureByConvention(); //auto configure for the base class props
-            //    //...
-            //});
+            builder.Entity<Source>(b =>
+            {
+                b.ToTable(ioConsts.DbTablePrefix + "Sources",
+                          ioConsts.DbSchema);
+                b.ConfigureByConvention(); //auto configure for the base class props
+                b.Property(x => x.Name).IsRequired().HasMaxLength(128);
+            });
         }
     }
 }

@@ -29,6 +29,20 @@ namespace SpiderWeb.io.Web.Menus
             var l = context.GetLocalizer<ioResource>();
 
             context.Menu.Items.Insert(0, new ApplicationMenuItem(ioMenus.Home, l["Menu:Home"], "~/"));
+
+            context.Menu.AddItem(
+    new ApplicationMenuItem(
+        "SpiderWeb",
+        l["Menu:SpiderWeb"],
+        icon: "fa fa-spider"
+    ).AddItem(
+        new ApplicationMenuItem(
+            "SpiderWeb.io.Sources",
+            l["Sources"],
+            url: "/Sources"
+        )
+    )
+);
         }
     }
 }

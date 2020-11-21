@@ -1,8 +1,29 @@
 {
-  "culture": "en",
-  "texts": {
+  "Culture": "en",
+  "Texts": {
     "Menu:Home": "Home",
     "Welcome": "Welcome",
-    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io."
+    "LongWelcomeMessage": "Welcome to the Spider Web. This is a media sourcing bot/service that gives uncensored access to the user.",
+    "Menu:SpiderWeb": "Web",
+    "Menu:Source": "Sources",
+    "Actions": "Actions",
+    "Close": "Close",
+    "Delete": "Delete",
+    "Edit": "Edit",
+    "PublishDate": "Publish date",
+    "NewBook": "New source",
+    "Name": "Name",
+    "SourceType": "SourceType",
+    "URL": "URL",
+    "ContentType": "ContentType",
+    "Tags": "Tags",
+    "AreYouSure": "Are you sure?",
+    "AreYouSureToDelete": "Are you sure you want to delete this item?",
+    "Enum:ContentType:0": "Undefined",
+    "Enum:ContentType:1": "Article",
+    "Enum:ContentType:2": "Video",
+    "Enum:ContentType:3": "Audio",
+    "Enum:ContentType:4": "Document",
+    "Enum:ContentType:5": "Miscellaneous"
   }
 }
