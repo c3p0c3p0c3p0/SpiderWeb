@@ -47,10 +47,7 @@ namespace Awesome
                 $"{message.From.FirstName} sent message {message.MessageId} " +
                 $"to chat {message.Chat.Id} at {message.Date}. " +
                 $"It is a reply to message {message.ReplyToMessage.MessageId} " +
-                $"and has {message.Entities.Length} message entities."
-);
+                $"and has {message.Entities.Length} message entities.");
         }
-
-
     }
 }
