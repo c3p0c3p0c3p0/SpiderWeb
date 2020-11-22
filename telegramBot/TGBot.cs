@@ -6,7 +6,7 @@ namespace telegramBot
 {
     public class TGBot
     {
-        static TelegramBotClient Bot = new TelegramBotClient("1433082577:AAFtoVW7Tq4aqZj4oN7K1uMt5i_rC4kXRIw");
+        static TelegramBotClient Bot = new TelegramBotClient("");
 
         static void Main(string[] args)
         {

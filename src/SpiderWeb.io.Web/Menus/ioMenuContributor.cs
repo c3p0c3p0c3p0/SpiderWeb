@@ -39,7 +39,7 @@ namespace SpiderWeb.io.Web.Menus
         new ApplicationMenuItem(
             "SpiderWeb.io.Sources",
             l["Sources"],
-            url: "/Sources"
+            url: "/Source"
         )
     )
 );
