@@ -1,6 +1,9 @@
 ﻿using System;
 using Telegram.Bot;
 using Telegram.Bot.Args;
+using Telegram.Bot.Types;
+using Telegram.Bot.Types.Enums;
+using Telegram.Bot.Types.ReplyMarkups;
 
 namespace Awesome
 {
@@ -14,7 +17,7 @@ namespace Awesome
 
             var me = botClient.GetMeAsync().Result;
             Console.WriteLine(
-              $"Hello, World! I am user {me.Id} and my name is {me.FirstName}."
+              $"Spider Bot v0.1.0 \nUserId: {me.Id} \nand registered name is {me.FirstName}."
             );
 
             botClient.OnMessage += Bot_OnMessage;
@@ -28,15 +31,26 @@ namespace Awesome
 
         static async void Bot_OnMessage(object sender, MessageEventArgs e)
         {
-            if (e.Message.Text != null)
-            {
-                Console.WriteLine($"Received a text message in chat {e.Message.Chat.Id}.");
+            Message message = await botClient.SendTextMessageAsync(
+              chatId: e.Message.Chat, // or a chat id: 123456789
+              text: "Trying *all the parameters* of `sendMessage` method",
+              parseMode: ParseMode.Markdown,
+              disableNotification: true,
+              replyToMessageId: e.Message.MessageId,
+              replyMarkup: new InlineKeyboardMarkup(InlineKeyboardButton.WithUrl(
+                "Check sendMessage method",
+                "https://core.telegram.org/bots/api#sendmessage"
+              ))
+            );
 
-                await botClient.SendTextMessageAsync(
-                  chatId: e.Message.Chat,
-                  text: "You said:\n" + e.Message.Text
-                );
-            }
+            Console.WriteLine(
+                $"{message.From.FirstName} sent message {message.MessageId} " +
+                $"to chat {message.Chat.Id} at {message.Date}. " +
+                $"It is a reply to message {message.ReplyToMessage.MessageId} " +
+                $"and has {message.Entities.Length} message entities."
+);
         }
+
+
     }
 }
