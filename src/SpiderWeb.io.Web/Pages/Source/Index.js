@@ -1,14 +1,14 @@
 ﻿$(function () {
     var l = abp.localization.getResource('ioResource');
 
-    var dataTable = $('#SourcesTable').DataTable(
+    var dataTable = $('#SourceTable').DataTable(
         abp.libs.datatables.normalizeConfiguration({
             serverSide: true,
             paging: true,
             order: [[1, "asc"]],
             searching: false,
             scrollX: true,
-            ajax: abp.libs.datatables.createAjax(SpiderWeb.io.sources.source.getList),
+            ajax: abp.libs.datatables.createAjax(io.sources.source.getList),
             columnDefs: [
                 {
                     title: l('Name'),
