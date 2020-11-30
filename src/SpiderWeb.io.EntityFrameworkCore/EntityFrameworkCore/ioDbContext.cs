@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SpiderWeb.io.Domain;
 using SpiderWeb.io.Sources;
 using SpiderWeb.io.Users;
 using Volo.Abp.Data;
@@ -23,6 +24,9 @@ namespace SpiderWeb.io.EntityFrameworkCore
     {
         public DbSet<AppUser> Users { get; set; }
         public DbSet<Source> Sources { get; set; }
+        public DbSet<Page> News { get; set; }
+        public DbSet<Comment> Comment { get; set; }
+        public DbSet<Reply> Reply { get; set; }
 
         /* Add DbSet properties for your Aggregate Roots / Entities here.
          * Also map them inside ioDbContextModelCreatingExtensions.Configureio
