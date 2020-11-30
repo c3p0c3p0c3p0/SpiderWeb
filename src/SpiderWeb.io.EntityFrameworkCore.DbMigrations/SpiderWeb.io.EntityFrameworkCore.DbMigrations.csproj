@@ -8,6 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20201130152134_Mega Watch Entities.cs" />
+    <Compile Remove="Migrations\20201130152134_Mega Watch Entities.Designer.cs" />
+    <Compile Remove="Migrations\20201130152351_Mega Watch Entities.cs" />
+    <Compile Remove="Migrations\20201130152351_Mega Watch Entities.Designer.cs" />
+    <Compile Remove="Migrations\20201130153918_Mega Watch Entities.cs" />
+    <Compile Remove="Migrations\20201130153918_Mega Watch Entities.Designer.cs" />
+    <Compile Remove="Migrations\20201130154128_Mega Watch Entities.cs" />
+    <Compile Remove="Migrations\20201130154128_Mega Watch Entities.Designer.cs" />
+    <Compile Remove="Migrations\20201130154257_Mega Watch Entities.cs" />
+    <Compile Remove="Migrations\20201130154257_Mega Watch Entities.Designer.cs" />
+    <Compile Remove="Migrations\20201130154454_Mega Watch Entities.cs" />
+    <Compile Remove="Migrations\20201130154454_Mega Watch Entities.Designer.cs" />
+    <Compile Remove="Migrations\20201130161826_Mega Watch Entities.cs" />
+    <Compile Remove="Migrations\20201130161826_Mega Watch Entities.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SpiderWeb.io.EntityFrameworkCore\SpiderWeb.io.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
