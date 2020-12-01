@@ -6,13 +6,13 @@ using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
 using Volo.Abp.Domain.Repositories;
 
-namespace Acme.BookStore.Books
+namespace SpiderWeb.io.Application
 {
     public class SourceAppService :
         CrudAppService<
-            Source, //The Book entity
+            Source, //The Source entity
             SourceDto, //Used to show books
-            Guid, //Primary key of the book entity
+            Guid, //Primary key of the source entity
             PagedAndSortedResultRequestDto, //Used for paging/sorting
             CreateUpdateSourceDto>, //Used to create/update a book
         ISourceAppService //implement the IBookAppService
@@ -20,7 +20,7 @@ namespace Acme.BookStore.Books
         public SourceAppService(IRepository<Source, Guid> repository)
             : base(repository)
         {
-
+           
         }
     }
 }

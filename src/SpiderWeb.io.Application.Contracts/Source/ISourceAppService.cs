@@ -8,11 +8,11 @@ namespace SpiderWeb.io.Sources
 {
     public interface ISourceAppService :
                 ICrudAppService< //Defines CRUD methods
-            SourceDto, //Used to show books
-            Guid, //Primary key of the book entity
+            SourceDto, //Used to show sources
+            Guid, //Primary key of the sources entity
             PagedAndSortedResultRequestDto, //Used for paging/sorting
-            CreateUpdateSourceDto> //Used to create/update a book
+            CreateUpdateSourceDto> //Used to create/update a sources
     {
-
+        
     }
 }
