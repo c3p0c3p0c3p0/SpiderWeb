@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Volo.Abp.Application.Dtos;
+using SpiderWeb.io.DomainShared;
 
 namespace SpiderWeb.io.Sources
 {

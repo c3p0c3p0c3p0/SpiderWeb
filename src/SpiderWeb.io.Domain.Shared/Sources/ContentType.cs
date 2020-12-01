@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SpiderWeb.io.Sources
+namespace SpiderWeb.io.DomainShared
 {
     public enum ContentType
     {

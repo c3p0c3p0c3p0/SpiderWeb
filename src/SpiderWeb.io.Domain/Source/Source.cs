@@ -1,11 +1,13 @@
-﻿using System;
+﻿using SpiderWeb.io.Domain;
+using SpiderWeb.io.DomainShared;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using Volo.Abp.Domain.Entities.Auditing;
 using Volo.Abp.Identity;
 
-namespace SpiderWeb.io.Sources
+namespace SpiderWeb.io.Domain
 {
     public class Source : AuditedAggregateRoot<Guid>
     {
