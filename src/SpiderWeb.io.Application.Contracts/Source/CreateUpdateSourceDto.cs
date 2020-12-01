@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using SpiderWeb.io.DomainShared;
 
 namespace SpiderWeb.io.Sources
 {
@@ -16,6 +17,11 @@ namespace SpiderWeb.io.Sources
         [Required]
         public ContentType ContentType { get; set; }
         public DateTime PublishDate { get; set; } = DateTime.Now;
-        public string Tags { get; set; }
+        public string Tags { get; set; }  
+        public Guid AddedBy { get; set; }
+        public double Rating { get; set; }
+        public int UpVotes { get; set; }
+        public int DownVotes { get; set; }
+  
     }
 }

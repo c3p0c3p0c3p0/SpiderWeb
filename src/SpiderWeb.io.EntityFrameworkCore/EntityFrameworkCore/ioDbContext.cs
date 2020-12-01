@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SpiderWeb.io.Domain;
-using SpiderWeb.io.Sources;
 using SpiderWeb.io.Users;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
@@ -23,7 +22,7 @@ namespace SpiderWeb.io.EntityFrameworkCore
     public class ioDbContext : AbpDbContext<ioDbContext>
     {
         public DbSet<AppUser> Users { get; set; }
-        public DbSet<Source> Sources { get; set; }
+        public DbSet<Source> Source { get; set; }
         public DbSet<Page> News { get; set; }
         public DbSet<Comment> Comment { get; set; }
         public DbSet<Reply> Reply { get; set; }

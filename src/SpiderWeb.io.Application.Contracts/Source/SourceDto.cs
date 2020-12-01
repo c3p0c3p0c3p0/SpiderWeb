@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
-using Volo.Abp.Domain.Entities.Auditing;
-using Volo.Abp.Identity;
+using Volo.Abp.Application.Dtos;
+using SpiderWeb.io.DomainShared;
 
 namespace SpiderWeb.io.Sources
 {
-    public class Source : AuditedAggregateRoot<Guid>
+    public class SourceDto : AuditedEntityDto<Guid>
     {
         public string Name { get; set; }
         public Guid AddedBy { get; set; }
@@ -20,5 +19,4 @@ namespace SpiderWeb.io.Sources
         public DateTime PublishDate { get; set; }
         public string Tags { get; set; }
     }
-
 }

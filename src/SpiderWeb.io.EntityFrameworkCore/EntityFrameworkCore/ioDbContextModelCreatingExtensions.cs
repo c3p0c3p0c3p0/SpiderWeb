@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SpiderWeb.io.Domain;
-using SpiderWeb.io.Sources;
 using SpiderWeb.io.Users;
 using Volo.Abp;
 using Volo.Abp.EntityFrameworkCore.Modeling;
@@ -18,7 +17,7 @@ namespace SpiderWeb.io.EntityFrameworkCore
 
             builder.Entity<Source>(b =>
             {
-                b.ToTable(ioConsts.DbTablePrefix + "Sources",
+                b.ToTable(ioConsts.DbTablePrefix + "Source",
                           ioConsts.DbSchema);
                 b.ConfigureByConvention(); //auto configure for the base class props
                 b.Property(x => x.Id).IsRequired().HasMaxLength(128);
